@@ -1,0 +1,150 @@
+/* 주석 단축키 ctrl + k + c */
+
+button {
+    border: white;
+}
+
+/* 상단 메뉴바 css */
+
+/* navbar는 네비게이션+바 주로 상단바 스타일이름 */
+/* border를 지정해서 설계도에 쓰이는 경우가 많음 -> border를 쓰고 margin으로 간격을 벌리면 눈에 잘보임 */
+/* float:right로 오른쪽정렬 */
+.navbar {
+    float: right;
+    border: 1px solid red;
+    margin: 20px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: green;
+    margin-right: 15px;
+}
+
+/* :hover를 쓰면 마우스커서를 갖다대었을 때 반응 */
+.nav-item:hover { 
+    text-decoration: underline;
+}
+
+/* 여기부터 가운데 메인 css */
+
+
+/* 상단메뉴바를 오른쪽 위로 올리는법-> 개발자도구에서 body부분을 선택해서 element.style에 display: contents를 입력! */
+/* display란 html태그를 정의하는 규칙 */
+/* 개발자도구는 시뮬레이션해보기 위함이고, 실제 코드는 따로 입력해야함 */
+
+body {
+    display: contents;
+}
+
+.main {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.input-area {
+    margin-top: 18px;
+}
+/* 개발자도구를 사용해서 클론하고자하는 부분의 style 체크박스를 없애본다. border-radius설정으로 박스모양을 둥글게 */
+/* solid는 항상 그 모양을 유지하기 위한 것인듯함 */
+/* input박스 안에다가 padding조절을 해줘야 아이콘 바로옆에서 자연스럽게 검색커서가 뜸 */
+.input-box {
+    width: 584px;
+    height: 46px;
+    border-radius: 24px;
+    border:1px solid lightgray;
+    padding-left: 40px;
+    padding-right: 80px;
+}
+
+/* 아이콘을 input box안에다 postioning 위치시키기 */
+/* positioning 공부 필요 */
+.search-icon {
+    position:relative;
+    left: 40px;
+    color: #9aa0a6;
+}
+.keyboard-icon {
+    position: relative;
+    right: 80px;
+    color: #9aa0a6;
+}
+.mic-icon {
+    position: relative;
+    right: 70px;
+    color: #9aa0a6;
+}
+
+/* button위에 공간을 띄우기 위해 margin-top 적용 */
+/* 이미지 등 위아래 다 공간을 띄우는게 아니라, 입력한 부분의 위를 띄우는 style을 별개로 적용하는게 좋은듯 */
+.button-area {
+    margin-top: 18px;
+}
+.button-style {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+}
+/* hover 스타일 참고하는거 진짜 있어보인다 연습하자 */
+/* 클론코딩할때 내가 원하는 style부분에 force state 메뉴 누르고 :hover 눌러서 마우스 클릭시의 style 확인 후 복붙! */
+.button-style:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: red;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+.google-offered-in {
+    font-size: small;
+    color: #3c4043;
+    line-height: 28px;
+}
+.google-offered-in-item {
+    text-decoration: none;
+    color: #1a0dab;
+}
+
+
+
+/* 여기부터 bottom 하단부분 style */
+.bottom-item {
+    text-decoration: none;
+    color: red;
+    margin-right: 15px;
+}
+.bottom-item:hover {
+    text-decoration: underline;
+}
+
+/* footer는 하단메뉴,  */
+/* width100%를 해주면 화면 끝까지 background가 적용됨 */
+.footer {
+    position: absolute;
+    bottom: 0px;
+    background: #f2f2f2;
+    width: 100%;
+}
+
+/* South Korea 부분에서 padding으로 위치 조정! @@@@ */
+.first-line {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #70757a;
+}
+.second-line {
+    color: #70757a;
+    display: block;
+    padding: 15px;
+}
+.second-line-float {
+    float:right
+}
+
+
+
+
+
